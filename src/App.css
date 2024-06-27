@@ -1,38 +1,147 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --montserrat:"Montserrat", sans-serif;
+  --green-color: rgb(0, 195, 140);
+  --gray-color: rgb(25, 31, 37);
+  --light-gray-color:rgb(105, 118, 113);
+  --bodt-bg-color:#F0F4F7;
+  --white-color:#ffff;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bodt-bg-color);
+}
+
+.header .navbar-expand-lg {
+  padding: 15px 0px;
+  /* box-shadow: rgb(217 221 226 / 20%) 0px 8px 24px; */
+  background-color: var(--white-color);
+}
+
+.header nav .nav-link {
+  font-family: var(--montserrat);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: var(--gray-color);
+  padding: 0 20px !important;
+
+}
+
+.header nav .nav-link:hover{
+  color: var(--green-color);
+
+}
+
+.header nav .nav-link.active{
+  color: var(--green-color);
+
+}
+
+/* cryption-section-css */
+
+.cryption-section .main-text{
+    padding: 130px 0px 78px;
+    text-align: center;
+}
+.cryption-section h4{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--gray-color);
+  font-family: 'Montserrat';
+}
+
+.cryption-section h1{
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 69px;
+  color: var(--gray-color);
+  font-family: 'Montserrat';
+}
+
+.cryption-section .left-side p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #697671;
+  font-family: 'Montserrat';
+}
+
+.cryption-section .right-side .progressbar-text .left-side span{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Montserrat';
+  color: var(--gray-color);
+}
+
+.cryption-section .right-side .progressbar-text .right-side span{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Montserrat';
+}
+
+.cryption-section .right-side .progress-1 .progressbar-text .right-side span{
+  color: #18D685;
+}
+
+.cryption-section .right-side .progress-2 .progressbar-text .right-side span{
+  color:#00BBB3;
+}
+
+.cryption-section .right-side .progress-3 .progressbar-text .right-side span{
+  color: #007471;
+}
+
+.cryption-section .right-side .progress-2{
+  padding: 30px 0px;
+}
+
+.cryption-section .right-side .progress, .progress-stacked {
+  --bs-progress-height: 0.8rem;
+  background-color: #ffff;
+}
+.cryption-section .right-side .progress-1 .progress, .progress-stacked {
+  --bs-progress-bar-bg: #18D685;
+}
+.cryption-section .right-side .progress-2 .progress, .progress-stacked {
+  --bs-progress-bar-bg: #00BBB3;
+}
+.cryption-section .right-side .progress-3 .progress, .progress-stacked {
+  --bs-progress-bar-bg: #007471;
+}
+
+
+/* End-cryption-section-css */
+
+/* End-Our-Tokens-css */
+
+.Our-Tokens-section .main-text{
+  padding: 130px 0px 78px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Our-Tokens-section h4{
+font-size: 30px;
+font-weight: 700;
+line-height: 40px;
+color: var(--gray-color);
+font-family: 'Montserrat';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Our-Tokens-section h1{
+font-size: 50px;
+font-weight: 200;
+line-height: 69px;
+color: var(--gray-color);
+font-family: 'Montserrat';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* End-Our-Tokens-css */
+

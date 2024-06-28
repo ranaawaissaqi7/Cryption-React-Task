@@ -5,13 +5,14 @@
   --green-color: rgb(0, 195, 140);
   --gray-color: rgb(25, 31, 37);
   --light-gray-color:rgb(105, 118, 113);
-  --bodt-bg-color:#F0F4F7;
+  --body-bg-color:#F0F4F7;
   --white-color:#ffff;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+  margin-bottom: 0px;
+}
 body {
   font-family: var(--font-family);
-  background-color: var(--bodt-bg-color);
 }
 
 .header .navbar-expand-lg {
@@ -43,8 +44,13 @@ body {
 
 /* cryption-section-css */
 
+.cryption-section{
+  background-color: var(--body-bg-color);
+  padding: 130px 0px 100px;
+}
+
 .cryption-section .main-text{
-    padding: 130px 0px 78px;
+    padding: 0px 0px 78px;
     text-align: center;
 }
 .cryption-section h4{
@@ -120,9 +126,12 @@ body {
 /* End-cryption-section-css */
 
 /* End-Our-Tokens-css */
+.Our-Tokens-section{
+  padding: 130px 0px 100px;
+}
 
 .Our-Tokens-section .main-text{
-  padding: 130px 0px 78px;
+  padding: 0px 0px 0px;
   text-align: center;
 }
 .Our-Tokens-section h4{
@@ -141,7 +150,113 @@ color: var(--gray-color);
 font-family: 'Montserrat';
 }
 
+.Our-Tokens-section h6{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  font-family: 'Montserrat';
+  padding: 50px 0px;
+}
 
+.Our-Tokens-section .token-card-main-div{
+  background-image: url("./assets/site-log.webp");
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+}
+.Our-Tokens-section .token-card-main-div .col-xl-6{
+  margin-bottom: 100px;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6 .inner-row h1{
+position: relative;
+}
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(1) .inner-row h1::before{
+  content: "01";
+  position: absolute;
+  z-index: -1;
+  font-family: 'Montserrat';
+  font-size: 100px;
+  font-weight: 700;
+  color: #e6eeef;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(2) .inner-row h1::before{
+  content: "03";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  font-family: 'Montserrat';
+  font-size: 100px;
+  font-weight: 700;
+  color: #e6eeef;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(3) .inner-row h1::before{
+  content: "02";
+  position: absolute;
+  z-index: -1;
+  font-family: 'Montserrat';
+  font-size: 100px;
+  font-weight: 700;
+  color: #e6eeef;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(4) .inner-row h1::before{
+  content: "04";
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+  font-family: 'Montserrat';
+  font-size: 100px;
+  font-weight: 700;
+  color: #e6eeef;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(2) .inner-row{
+  justify-content: end;
+}
+
+.Our-Tokens-section .token-card-main-div .col-xl-6:nth-of-type(4) .inner-row{
+  justify-content: end;
+}
+
+.Our-Tokens-section .token-card-main-div .inner-row h1{
+  font-family: var(--montserrat);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color:var(--gray-color);
+  margin-bottom: 20px;
+}
+
+.Our-Tokens-section .token-card-main-div .token-card-1 p{
+  width: 65%;
+}
+
+.Our-Tokens-section .token-card-main-div .token-card-2{
+  text-align: end;
+  width: 65%;
+  margin-left: auto;
+}
+
+.Our-Tokens-section .token-card-main-div .token-card-3{
+width: 65%;
+}
+
+.Our-Tokens-section .token-card-main-div .token-card-4{
+  text-align: end;
+  width: 65%;
+  margin-left: auto;
+}
+
+.Our-Tokens-section .token-card-main-div .inner-row p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: 'Montserrat';
+  color: var(--gray-color);
+}
 
 /* End-Our-Tokens-css */
 

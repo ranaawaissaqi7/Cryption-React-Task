@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <>
 
-<div className="header">
+<div className="header position-fixed top-0 w-100 z-3">
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
